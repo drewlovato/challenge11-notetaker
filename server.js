@@ -3,10 +3,14 @@ const path = require("path");
 const fs = require("fs");
 const uuid = require("uuid");
 
+// INITIATES EXPRESS
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// MIDDLEWARE
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // GET database
 app.get("/api/notes", (req, res) => {
@@ -17,7 +21,6 @@ app.get("/api/notes", (req, res) => {
 app.post("/api/notes", (req, res) => {
   const notes = JSON.parse(fs.readFileSync("./db/db.json"));
   const newNotes = req.body;
-  console.log(id);
   newNotes.id = uuid.v4();
   notes.push(newNotes);
   fs.writeFileSync("./db/db.json", JSON.stringify(notes));
@@ -41,7 +44,7 @@ app.get("/", function (req, res) {
 
 //GET notes page (notes.html)
 app.get("/notes", (req, res) =>
-  res.sendFile(path.join(__dirname, "/public/notes.html"))
+  res.sendFile(path.join(__dirname, "./public/notes.html"))
 );
 
 // Listen for Express PORT
