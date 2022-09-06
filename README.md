@@ -45,4 +45,8 @@ To contact me personally please use email below:
 
 ### Screen Shots
 
+<img width="1412" alt="Screen Shot 2022-09-06 at 8 32 34 AM" src="https://user-images.githubusercontent.com/59673032/188674467-f1d8228a-6027-49b6-a899-cc937d768b3c.png">
+
+<img width="1412" alt="Screen Shot 2022-09-06 at 8 32 13 AM" src="https://user-images.githubusercontent.com/59673032/188674493-fd9758b9-f95e-404b-97c6-52451dc5654a.png">
+
 #### back to [table-of-contents](#table-of-contents)
