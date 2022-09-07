@@ -35,7 +35,7 @@
 
 ### Questions
 
-Link to Live App: https://dashboard.heroku.com/apps/note-taker-challenge11-andrew
+Link to Live App: https://note-taker-challenge11-andrew.herokuapp.com/
 
 If you would like to see some of my other work see link below:
 
