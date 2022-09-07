@@ -51,10 +51,10 @@ const deleteNote = (id) =>
   });
 
 const renderActiveNote = (id) => {
+  console.log("hello");
   hide(saveNoteBtn);
 
-  // if (activeNote.id) {
-  if (id) {
+  if (activeNote.id) {
     noteTitle.setAttribute("readonly", true);
     noteText.setAttribute("readonly", true);
     noteTitle.value = activeNote.title;
